@@ -28,5 +28,4 @@ steps:
     npm install --only=dev
     yarn install
     npm run build
-    print 'build done'
   displayName: 'npm install and build'
