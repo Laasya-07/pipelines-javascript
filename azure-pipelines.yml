@@ -27,5 +27,10 @@ steps:
     npm install
     npm install --only=dev
     yarn install
+    npm run compile
     npm run build
   displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)'
